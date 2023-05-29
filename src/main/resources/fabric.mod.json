@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "butterfingers",
+  "version": "${version}",
+  "name": "butterfingers",
+  "description": "your stuff is important!",
+  "authors": [
+    "sylvxa"
+  ],
+  "contact": {
+    "repo": "https://github.com/sylvxa/butterfingers"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/butterfingers/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "lgbt.sylvia.butterfingers.Butterfingers"
+    ]
+  },
+  "mixins": [
+    "butterfingers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
