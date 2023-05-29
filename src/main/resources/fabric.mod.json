@@ -3,7 +3,7 @@
   "id": "butterfingers",
   "version": "${version}",
   "name": "butterfingers",
-  "description": "your stuff is important!",
+  "description": "don't slip up!",
   "authors": [
     "sylvxa"
   ],
@@ -16,6 +16,9 @@
   "entrypoints": {
     "client": [
       "lgbt.sylvia.butterfingers.Butterfingers"
+    ],
+    "modmenu": [
+      "lgbt.sylvia.butterfingers.modmenu.ModMenuImpl"
     ]
   },
   "mixins": [
