@@ -2,6 +2,7 @@ package lgbt.sylvia.butterfingers.config;
 
 import lgbt.sylvia.butterfingers.Butterfingers;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.OptionsScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -17,10 +18,6 @@ public class ConfigScreen extends Screen {
         super(Text.of("Butterfingers Config"));
         this.parent = screen;
         initWidgets();
-    }
-
-    private int center(int parent) {
-        return (parent/2) - (256/2);
     }
 
     @Override
@@ -54,8 +51,8 @@ public class ConfigScreen extends Screen {
     }
 
     @Override
-    public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-        this.renderBackgroundTexture(matrices);
-        super.render(matrices, mouseX, mouseY, delta);
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        this.renderBackgroundTexture(context);
+        super.render(context, mouseX, mouseY, delta);
     }
 }
